@@ -127,8 +127,8 @@
                         <phase>install</phase>
                         <configuration>
                             <target>
-                                <copy todir="stubs">
-                                    <fileset dir="target/stubs" includes="**/*"/>
+                                <copy todir="META-INF">
+                                    <fileset dir="target/stubs/META-INF" includes="**/*"/>
                                 </copy>
                             </target>
                         </configuration>
