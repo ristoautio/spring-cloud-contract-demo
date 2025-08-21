@@ -1,5 +1,5 @@
 {
-  "id" : "ca37fa53-c640-43a1-9071-6123a348a51a",
+  "id" : "91d5f05b-f661-4c36-a6d4-fd732d6d9f07",
   "request" : {
     "url" : "/test",
     "method" : "GET"
@@ -9,5 +9,5 @@
     "body" : "Test successful!",
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "ca37fa53-c640-43a1-9071-6123a348a51a"
+  "uuid" : "91d5f05b-f661-4c36-a6d4-fd732d6d9f07"
 }
