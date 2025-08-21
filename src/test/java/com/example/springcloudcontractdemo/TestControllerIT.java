@@ -14,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureWebTestClient
 @ExtendWith(OutputCaptureExtension.class)
+@WithLocalDateTime(datetime= "2023-10-01T12:00:00")
 public class TestControllerIT {
 
     @Autowired
@@ -31,6 +32,9 @@ public class TestControllerIT {
             .isEqualTo("Test successful!");
 
         assertThat(capturedOutput.getOut())
-            .contains("Request received at /test endpoint");
+                .contains("Request received at /test endpoint");
+
+        assertThat(capturedOutput.getOut())
+                .contains("Time is: 2023-10-01T12:00:00Z");
     }
 }
